@@ -1,0 +1,48 @@
+/* AdminDashboard.css */
+
+.admin-dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    flex: 0 0 200px;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .sidebar-title {
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-item {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-item-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sidebar-item-count {
+    font-size: 24px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Add your main content styles here */
+  }
+  
+  /* Example hover effect for sidebar items */
+  .sidebar-item:hover {
+    background-color: #444;
+  }
+  
+  .sidebar-item:hover .sidebar-item-title,
+  .sidebar-item:hover .sidebar-item-count {
+    color: #ffcc00;
+  }
+  

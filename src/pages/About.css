@@ -1,0 +1,133 @@
+  .about-us-page__title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .about-us-page__description {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #212435;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+  }
+
+  h1 {
+    color: White;
+  }
+
+  p, li {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #212435;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .about-us-container {
+    background: url('C:\Users\User\senior\src\images\background.png') no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+
+  .animate__animated {
+    animation-duration: 3s;
+  }
+
+  .about {
+    margin-top: 32px;
+  }
+  .about-us-container > h1 {
+    color: #fff;
+    font-size: 80px;
+    margin-top: -100px;
+  }
+
+  .about > h6 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .about-us-page__employee-section {
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .about-us-page__employees {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+  }
+  
+  .employee {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-size: cover;
+  }
+
+  .employee-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .employee-name {
+    margin-top: 28px;
+    font-size: 18px;
+  }
+  
+  .employee-position {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .about-title,
+  .about-us-page__employee-section-title,
+  .contact-us-title {
+    text-align: center;
+    color:rgb(38, 102, 154);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+    margin-bottom: 30px;
+  }
+
+  .about-us-page__description {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(61, 123, 174);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .about-us-page__description > li {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(61, 123, 174);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .about-us-content {
+    background-color: #f8f5f5;
+  }

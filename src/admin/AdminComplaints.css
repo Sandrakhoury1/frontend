@@ -1,0 +1,128 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    white-space: pre-wrap;
+  }
+
+  table {
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  th, td{
+    border: 4px solid white;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 200px;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 12px 16px;
+    text-align: left;
+  }
+
+  thead th {
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
+
+  tbody td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  @media (max-width: 768px) {
+    .complaints {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .filter-container {
+      margin-bottom: 1rem;
+    }
+  
+    table {
+      width: 100%;
+      overflow-x: auto;
+    }
+  
+    table th,
+    table td {
+      white-space: nowrap;
+    }
+  }
+
+  .b {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .b:hover {
+    background-color: #040404;
+  }
+  
+  .btn-resolved {
+    background-color: #0e8b05;
+  }
+  .btn-rejected {
+    background-color: #f44336;
+  }
+  .btn-inprogress {
+    background-color: #ff9800;
+  }
+
+  .search,
+  .status-ipt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 100px;
+    max-width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #040404;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .btnDetails {
+    background-color: #273C71;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border: none;
+  }
+  
+  .btnDetails:hover {
+    background-color: #395db9;
+  }
+
+  .vip-user {
+    color: red;
+  }

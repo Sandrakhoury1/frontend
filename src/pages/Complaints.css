@@ -1,0 +1,270 @@
+/* CSS for modern UI */
+/* Main container */
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Add Complaint section */
+.add-complaint {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  transition: background-color 0.5s ease;
+  margin-bottom: 10px;
+}
+
+.add-complaint:hover{
+  background-color: #e8e8e8;
+}
+
+.add-complaint h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-complaint label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.add-complaint input,
+.add-complaint textarea,
+.add-complaint select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-complaint button {
+  display: block;
+  margin-top: 10px;
+  padding: 12px 16px;
+  background-color: #072b52;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-complaints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.filter-container label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-size: 18px;
+}
+
+.filter-container select {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #c7c5c5;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.filter-container select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.filter-container select option {
+  color: #333;
+}
+.complaints-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td{ 
+  border: 4px solid white;
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word;
+  max-width: 200px;
+}
+
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+td[class^="status-"] {
+  position: relative;
+}
+
+td[class^="status-"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+td[class^="status-"]:hover::before {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+  table th,
+  table td {
+    border: 4px solid white;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 200px;
+  }
+
+  thead th,
+  tbody td {
+  padding: 12px 16px;
+  text-align: left;
+}
+}
+
+@media (max-width: 768px) {
+  .add-complaint,
+  .filter-complaints,
+  .complaints {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .filter-container {
+    margin-bottom: 1rem;
+  }
+
+  /* th, td{ 
+    border: 4px solid white;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 200px;
+  } */
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th:first-child, td:first-child {
+    text-align: left;
+  }
+  table th,
+  table td {
+    border: 4px solid white;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 500px;
+  }
+
+  thead th,
+  tbody td {
+  padding: 12px 16px;
+  text-align: left;
+}
+}
+
+.status-pending {
+  color: rgb(59, 45, 45);
+}
+
+.status-inprogress {
+  color: #e6800c;
+}
+.status-rejected {
+  color: #c73434;
+}
+.status-resolved {
+  color: #66c75f;
+} 
+.status-pending {
+  color:rgb(91, 72, 72);
+}
+
+.required::after {
+  content: "*";
+  color: rgb(215, 23, 23);
+  margin-left: 4px;
+}
+
+.btnDetails {
+  background-color: #273C71;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  border: none;
+}
+
+.btnDetails:hover {
+  background-color: #395db9;
+}
+
+select,
+option {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}

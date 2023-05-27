@@ -1,0 +1,129 @@
+/* .complaints {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .complaints-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .complaint {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .status-buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .status-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .status-buttons button:nth-child(1) {
+    background-color: #f00;
+    color: #fff;
+  }
+  
+  .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.status-buttons button {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-buttons button:nth-child(1) {
+  background-color: #f00;
+  color: #fff;
+}
+
+.status-buttons button:nth-child(2) {
+  background-color: #0f0;
+  color: #fff;
+}
+
+.status-buttons button:nth-child(3) {
+  background-color: #ff0;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .complaint {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .complaint h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .complaint p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+  
+  .complaint .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .complaint .status label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .complaint .status select {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
